@@ -1,0 +1,109 @@
+%stepWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  margin: 0.8rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6rem 5rem 8rem 5rem;
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+  text-align: left;
+}
+
+.startingPointWrapper {
+  @extend %stepWrapper;
+}
+
+.strategyWrapper {
+  @extend %stepWrapper;
+}
+
+.solutionWrapper {
+  @extend %stepWrapper;
+}
+
+.howWrapper {
+  @extend %stepWrapper;
+}
+
+.stepNumber {
+  font-size: 3.5rem;
+}
+
+.title {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.quoteDiv {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+}
+
+.quote {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.quotee {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .wrapper {
+    max-width: 70%;
+  }
+
+  .stepsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+
+  .stepsWrapper > div {
+    padding-bottom: 1.5rem;
+  }
+
+  .stepNumber {
+    font-weight: 700;
+  }
+  
+  .title {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .wrapper {
+    max-width: 95%;
+  }
+}
