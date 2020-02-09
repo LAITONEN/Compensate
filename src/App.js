@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from './components/Main/Main'
 import Idea from './components/Idea/Idea'
+import PromiseVision from './components/PromiseVision/PromiseVision'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faArrowDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Main />
       <Idea />
+      <PromiseVision />
     </div>
   );
 }
