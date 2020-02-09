@@ -1,0 +1,63 @@
+.wrapper {
+  background: url('../../assets/forest-mist.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+
+.content {
+  color: rgba(255,255,255,0.85);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  max-width: 70%;
+  margin: auto;
+  line-height: 1.3;
+}
+
+.promiseWrapper {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 1.2rem;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1500px) {
+  .content {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .content {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .content {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .content {
+    max-width: 90%;
+  }
+}
