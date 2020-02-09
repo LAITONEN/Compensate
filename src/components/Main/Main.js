@@ -35,7 +35,7 @@ const Main = (props) => {
       <div className={styles.main}>
         <div className={styles.navigationWrapper}>
           <div className={styles.logoWrapper}>
-            <CompensateWhiteLogo className={styles.logo} />
+            <CompensateWhiteLogo className={styles.compensateLogo} />
           </div>
           <div className={styles.mainNavigation}>
             <MainNavigation />
@@ -63,7 +63,7 @@ const Main = (props) => {
         navigationModalVisible && <div className={styles.navigationModalWrapper}>
           <div className={styles.modalHeaderWrapper}>
             <div className={styles.logoWrapper}>
-              <CompensateBlackLogo className={styles.logo} />
+              <CompensateBlackLogo className={styles.compensateLogo} />
             </div>
             <div>
               <button className={styles.iconButton} onClick={renderNavigationModal}>

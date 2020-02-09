@@ -1,4 +1,4 @@
-$font-color: #1b1b1b;
+$black: #1b1b1b;
 
 @mixin hideElement {
   display: none;
@@ -36,14 +36,14 @@ $font-color: #1b1b1b;
   margin-right: auto;
 
   .title {
-    color: $font-color;
+    color: $black;
     font-size: 3rem;
     padding-bottom: 25px;
     font-weight: 700;
   }
 
   .description {
-    color: $font-color;
+    color: $black;
     font-size: 1.8rem;
     font-weight: 400;
     padding-bottom: 50px;

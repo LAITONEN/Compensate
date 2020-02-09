@@ -11,14 +11,14 @@ $font-color: #fff;
 }
 
 @mixin logoWrapper {
-    flex: 1;
-    justify-content: flex-start;
-    display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  display: flex;
 }
 
 @mixin compensateLogo {
-  height: 50px;
-  width: 128px;
+  height: auto;
+  width: 9.5625rem;
 }
 
 @mixin headerWrapper {
@@ -60,14 +60,6 @@ $font-color: #fff;
 
   @include headerWrapper;
 
-  .logoWrapper {
-    @include logoWrapper;
-  }
-
-  .logo {
-    @include compensateLogo;
-  }
-
   .mainNavigation {
     @extend %flexRowCenter;
     flex: 5;
@@ -80,7 +72,16 @@ $font-color: #fff;
 
   .navigationItem {
     @include navigationItem;
+    color: $font-color;
     font-size: 1.1rem;
+  }
+}
+
+.logoWrapper {
+  @include logoWrapper;
+
+  .compensateLogo {
+    @include compensateLogo;
   }
 }
 
@@ -102,21 +103,21 @@ $font-color: #fff;
 
   .title {
     color: $font-color;
-    font-size: 5em;
+    font-size: 5rem;
     padding-bottom: 25px;
     font-weight: 700;
   }
 
   .subtitle {
     color: $font-color;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-bottom: 50px;
   }
 
   .calculateButton {
     color: $font-color;
     line-height: 1.5;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-family: CircularStd,sans-serif;
     font-weight: 700;
     border: 2px solid #288c96;
@@ -146,6 +147,24 @@ $font-color: #fff;
   }
 }
 
+@media screen and (max-width: 1499px) {
+  .content {
+    
+  
+    .title {
+      font-size: 3.75rem;
+    }
+  
+    .subtitle {
+      font-size: 1.48rem;
+    }
+  
+    .calculateButton {
+      font-size: 0.89rem;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigationWrapper {
     padding: 1.875rem 2.5rem;
@@ -157,6 +176,14 @@ $font-color: #fff;
 }
 
 @media screen and (max-width: 1199px) {
+
+  .content {
+    width: 80%;
+
+    .subtitle {
+      max-width: 80%;
+    }
+  }
 
   %iconButton {
     background-color: transparent;
@@ -213,14 +240,6 @@ $font-color: #fff;
       @include headerWrapper;
       padding: 1.875rem 1.25rem 0;
 
-      .logoWrapper {
-        @include logoWrapper;
-      }
-
-      .logo {
-        @include compensateLogo;
-      }
-
       .iconButton {
         @extend %iconButton;
       }
@@ -266,5 +285,29 @@ $font-color: #fff;
       width: 100%;
     }
 
+  }
+
+  .logoWrapper {
+    @include logoWrapper;
+    
+    .compensateLogo {
+      @include compensateLogo;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .logoWrapper {
+    @include logoWrapper;
+    
+    .compensateLogo {
+      width: 6.375rem;
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 2.4rem;
+    }
   }
 }
