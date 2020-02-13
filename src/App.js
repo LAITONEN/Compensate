@@ -12,11 +12,11 @@ import Quote from './components/Quote/Quote'
 import Credits from './components/Credits/Credits'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faArrowDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faArrowRight, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
 
-library.add(fab, faArrowDown, faBars, faTimes)
+library.add(fab, faArrowDown, faBars, faTimes, faArrowRight)
 
 function App() {
   return (
