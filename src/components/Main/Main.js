@@ -32,7 +32,7 @@ const Main = (props) => {
 
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.mainWrapper}>
         <div className={styles.navigationWrapper}>
           <div className={styles.logoWrapper}>
             <CompensateWhiteLogo className={styles.compensateLogo} />
@@ -51,8 +51,10 @@ const Main = (props) => {
         </div>
         <div className={styles.content}>
           <div className={styles.title}>Who is responsible for the atmosphere?</div>
-          <div className={styles.subtitle}>Compensate – empowering everyone to take responsibility and action for the climate.</div>
-          <button className={styles.calculateButton}>Calculate and compensate your carbon footprint</button>
+          <div className={styles.bottomContentWrapper}>
+            <div className={styles.subtitle}>Compensate – empowering everyone to take responsibility and action for the climate.</div>
+            <button className={styles.calculateButton}>Calculate and compensate your carbon footprint</button>
+          </div>
         </div>
         <div className={styles.footer}>
           <div className={styles.text}>See how it works</div>

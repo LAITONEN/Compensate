@@ -46,7 +46,7 @@ $font-color: #fff;
   justify-content: center;
 }
 
-.main {
+.mainWrapper {
   background: url('../../assets/Main.png') no-repeat center;
   background-size: cover;
   display: flex;
@@ -100,6 +100,7 @@ $font-color: #fff;
   height: 80vh;
   width: 1080px;
   margin: auto;
+  text-align: center;
 
   .title {
     color: $font-color;
@@ -108,10 +109,16 @@ $font-color: #fff;
     font-weight: 700;
   }
 
+  .bottomContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .subtitle {
     color: $font-color;
     font-size: 1.5rem;
-    padding-bottom: 50px;
+    padding-bottom: 4rem;
   }
 
   .calculateButton {
@@ -309,5 +316,34 @@ $font-color: #fff;
     .title {
       font-size: 2.4rem;
     }
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  .content {
+    height: 80vh;
+    margin-top: 15vh;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    justify-content: space-between;
+
+    .subtitle {
+      color: black;
+      font-size: 1.1rem;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  .bottomContentWrapper {
+    background-color: #fcfaf8;
+    width: 100%;
+    padding: 1.875rem 1.25rem;
+  }
+
+  .footer {
+    display: none;
+    visibility: hidden;
   }
 }
