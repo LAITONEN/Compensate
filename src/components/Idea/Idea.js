@@ -6,12 +6,12 @@ const description = 'Compensate empowers individuals to combat climate change an
 const Idea = (props) => {
 
   return (
-    <div className={styles.main}>
+    <div className={styles.mainWrapper}>
       <div className={styles.idea}>
         <div className={styles.title}>The idea of Compensate</div>
         <div className={styles.description}>{description}</div>
         <div className={styles.videoWrapper}>
-          <iframe className={styles.video} title="idea-of-compensate" src="https://player.vimeo.com/video/361360141?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen />
+          <iframe className={styles.video} title="idea-of-compensate" src="https://player.vimeo.com/video/361360141?title=0&byline=0&portrait=0" width="640" height="360" frameBorder="0" allowfFullScreen />
         </div>
       </div>
     </div>
