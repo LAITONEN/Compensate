@@ -16,11 +16,13 @@ $black: #1b1b1b;
   justify-content: center;
 }
 
-.main {
+.mainWrapper {
   background-color:#fcfaf8;
   display: flex;
   flex-direction: column;
-  padding: 6.5rem 5rem 5.5rem 5rem;
+  padding: 8.75rem 6.25rem 6.5rem 6.25rem;
+  z-index: 100;
+  position: relative;
 }
 
 .idea {
@@ -68,6 +70,10 @@ $black: #1b1b1b;
 }
 
 @media screen and (max-width: 1499px) {
+  .mainWrapper {
+    padding: 8.75rem 5rem 6.5rem 5rem;
+  }
+
   .video {
     width: 800px;
   }
@@ -83,6 +89,15 @@ $black: #1b1b1b;
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .mainWrapper {
+    padding: 5rem 1.25rem 4rem 1.25rem;
+  }
+
+  .description {
+    width: 90%;
+  }
+}
 
 @media screen and (max-width: 899px) {
   .idea {
@@ -91,11 +106,16 @@ $black: #1b1b1b;
     }
     .description {
       font-size: 1.4rem;
+      width: 85%;
     }
   }
 
   .videoWrapper {
     height: inherit;
+
+    .video {
+      height: 360px;
+    }
   }
 
 }

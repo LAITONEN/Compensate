@@ -48,6 +48,11 @@ $font-color: #fff;
 }
 
 .mainWrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlayWrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -62,6 +67,8 @@ $font-color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 100%;
+  height: calc(100vw / 16 * 9);
 }
 
 .navigationWrapper {
