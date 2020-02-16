@@ -119,3 +119,21 @@ $black: #1b1b1b;
   }
 
 }
+
+@media screen and (max-width: 639px) {
+
+  .idea {
+    .title {
+      font-size: 1.9rem;
+    }
+    .description {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .videoWrapper {
+    .video {
+      height: calc(100vw/16*9);
+    }
+  }
+}
