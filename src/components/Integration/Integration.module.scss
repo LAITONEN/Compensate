@@ -1,0 +1,235 @@
+.mainWrapper {
+  background: url('../../assets/plane-wing.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 8%;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-weight: 700;
+  width: 50%;
+  text-align: left;
+
+  .title {
+    font-size: 2.3rem;
+    margin: inherit;
+    margin-bottom: 2rem;
+    width: 75%;
+  }
+
+  .subtitle {
+    margin: inherit;
+    font-size: 1.4rem;
+    width: 75%;
+  }
+}
+
+.hotelAppImage {
+  background: url('../../assets/hotel-mockup.png') no-repeat center;
+  background-size: cover;
+  height: 0;
+  padding-top: 55%;
+  width: 25%;
+  position: absolute;
+  top: 8%;
+  right: 7%;
+}
+
+
+@media screen and (min-width: 2041px) {
+
+  .mainWrapper {
+    height: 100%;
+  }
+
+  .text {
+
+    width: 70%;
+
+    .title {
+      font-size: 4.5rem;
+      padding-bottom: 2rem;
+    }
+  
+    .subtitle {
+
+      font-size: 2.5rem;
+    }
+  }
+
+  .contentWrapper {
+    padding: initial auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .hotelAppImage {
+    padding-top: 50%;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 2040px) {
+  
+  .mainWrapper {
+    height: 85%;
+  }
+
+  .text {
+    width: 70%;
+
+    .title {
+      font-size: 4rem;
+      padding-bottom: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .mainWrapper {
+    height: 75%;
+  }
+}
+
+
+@media screen and (max-width: 1499px) {
+
+  .mainWrapper {
+    height: 70%;
+  }
+
+  .text {
+
+    .title {
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.7rem;
+    }
+  }
+
+  .hotelAppImage {
+    padding-top: 60%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hotelAppImage {
+    padding-top: 77%;
+    width: 37%;
+  }
+
+  .text {
+    width: 60%;
+
+    .title {
+      font-size: 2.7rem;
+      padding-bottom: 0;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .text {
+    width: 50%;
+
+    .title {
+      font-size: 2.34rem;
+      padding-bottom: 0;
+    }
+  
+    .subtitle {
+      font-size: 1.3rem;
+    }
+  }
+  .hotelAppImage {
+    padding-top: 76%;
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .mainWrapper {
+    height: auto;
+    padding: 4%;
+    padding-top: 12%;
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    .title {
+      font-size: 2.16rem;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+      width: 60%;
+    }
+  }
+
+  .hotelAppImage {
+    padding-top: 100%;
+    width: 50%;
+    position: inherit;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
+  .hotelAppImage {
+    padding-top: 140%;
+    width: 65%;
+  }
+}
+
+/* @media screen and (max-width: 1199px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 1023px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 899px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 639px) {
+.textDivs {
+  max-width: 60%;
+} */
