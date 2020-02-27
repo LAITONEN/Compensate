@@ -1,7 +1,460 @@
-.forIndividuals {
+$black: #1b1b1b;
+
+%title {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+%offer {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+%mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.8rem;
+}
+
+.wrapper {
 
 }
 
-.forBusiness {
+.mainTitle {
+  @extend %mainTitle;
+}
+
+.forIndividualsWrapper {
+
+  .contentWrapper {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    height: 0;
+    margin-bottom: -0.1rem;
+  }
+  .content {
+    width: 55%;
+    margin: auto;
+    color:#fff;
+  }
+  .title {
+    @extend %title;
+  }
+  .offer {
+    @extend %offer;
+  }
+
+  .mobileCollectionImage {
+    background: url('../../assets/mobile-collection.png') no-repeat center;
+    background-size: cover;
+    height: 0;
+    padding-top: 53.333333%;
+    width: 100%;
+  }
+}
+
+.forBusinessWrapper {
+
+  padding: 0 5rem 8.75rem 5rem;
+  position: relative;
+  min-height: 70vh;
+
+  .titleWrapper {
+    width: 60%;
+    margin: auto;
+    padding-top: 6%;
+    padding-bottom: 3%;
+  }
+  .title {
+    @extend %title;    
+  }
+  .offer {
+    @extend %offer;  
+  }
+
+  .indexWrapper {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+
+    .index {
+      margin-right: 1.1rem;
+    }
+
+    .arrow {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .arrow:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logosWrapper {
+    height: 52px;
+    display: flex;
+    justify-content: flex-start;
+
+    svg {
+      height: inherit;
+      width: auto;
+    }
+
+    svg:first-child {
+      margin-right: 3rem;
+    }
+  }
+
+  .twoGirlsImage {
+    background: url('../../assets/two-girls.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+
+  .contentTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 2.5rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+
+  .logosWrapper {
+    margin-bottom: 10rem;
+  }
+
+  .contentInfoWrapper {
+    text-align: left;
+
+    button {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      font-feature-settings: "ss01" 1,"ss02" 1;
+      font-weight: 700;
+      border: 2px solid #288c96;
+      border-radius: 2.5rem;
+      padding: 0.7rem 1.3rem;
+      text-decoration: none;
+      min-width: 10.5rem;
+      box-sizing: border-box;
+      cursor: pointer;
+      background: #288c96;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      max-width: fit-content;
+      margin-top: .9375rem;
+    }
+
+    button:hover {
+      background: #7ebac0;
+      border-color: #7ebac0;
+    }
+  }
+
+  .contentDescription {
+    padding-bottom: 2.7rem;
+    width: 75%;
+    font-size: 1.1rem;
+  }
+
+  .contentTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1.8rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 2041px) {
+  .contentWrapper {
+    padding: initial auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .forIndividualsWrapper {
+
+    .mobileCollectionImage {
+      padding-top: 40%;
+    }
+
+    .contentWrapper {
+      padding-bottom: 0;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .forIndividualsWrapper {
+
+    .title {
+      font-size: 2.7rem;
+    }
+
+    .offer {
+      font-size: 1.3rem;
+    }
+
+    .contentInfoWrapper {
+      width: 50%;
+      max-width: 38.4375rem;
+    }
+
+    .mobileCollectionImage {
+      padding-top: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .forIndividualsWrapper {
+
+    .contentWrapper {
+      padding-bottom: 0;
+      height: auto;
+    }
+  }
+  .forBusinessWrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .forIndividualsWrapper {
+
+    .contentWrapper {
+      margin-bottom: -4%;
+      padding-bottom: 0;
+      height: auto;
+    }
+  }
+  .forBusinessWrapper {
+    width: 80%;
+    margin: auto;
+
+    .contentDescription {
+      font-size: 1.4rem;
+    }
   
+    .contentTitle {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .forIndividualsWrapper {
+
+    .contentWrapper {
+      margin-bottom: -6%;
+      padding-bottom: 0;
+      height: auto;
+    }
+  }
+
+  .forBusinessWrapper {
+    
+    .titleWrapper {
+      width: 80%;
+    }
+
+    .contentDescription {
+      font-size: 1.1rem;
+    }
+  
+    .contentTitle {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .forIndividualsWrapper {
+
+    .contentWrapper {
+      padding-bottom: 0;
+      height: auto;
+    }
+
+    .title {
+      font-size: 2.13rem;
+    }
+
+    .offer {
+      font-size: 1.3rem;
+    }
+  }
+
+  .forBusinessWrapper {
+    width: 90%;
+    padding: 0 0 8.75rem 0;
+
+    .title {
+      font-size: 2.13rem;
+    }
+
+    .offer {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .forIndividualsWrapper {
+
+    .content {
+      width: 70%;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .offer {
+      font-size: 1.1rem;
+    }
+
+    .contentWrapper {
+      margin-bottom: -6%;
+      padding-bottom: 0;
+      height: auto;
+      flex-direction: column;
+    }
+
+    .mainTitle {
+      font-size: 2rem;
+    }
+
+    .mobileCollectionImage {
+      padding-top: 70%;
+    }
+  }
+
+  .forBusinessWrapper {
+
+    .titleWrapper {
+      width: 70%;
+    }
+
+    .contentWrapper {
+      flex-direction: column;
+    }
+
+    .contentTextWrapper {
+      flex: auto;
+      padding: 0;
+      padding-top: 2rem;
+    }
+
+    .contentInfoWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      button {
+        min-width: 15rem;
+        min-height: 4rem;
+      }
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .offer {
+      font-size: 1.1rem;
+    }
+
+    .contentTitle, .contentDescription {
+      width: 100%;
+    }
+
+    .twoGirlsImage {
+      height: 30vh;
+      flex: auto;
+    }
+
+    .logosWrapper {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .forIndividualsWrapper {
+
+    .mainTitle {
+      font-size: 1.8rem;
+      width: 90%;
+      margin: auto;
+    }
+
+    .content {
+      width: 85%;
+      margin:auto
+    }
+
+    .contentWrapper {
+      padding-bottom: 5%;
+      height: auto;
+    }
+
+    .mobileCollectionImage {
+      padding-top: 75%;
+    }
+
+    .title {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .offer {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .forBusinessWrapper {
+    padding: 0 1.5rem 6rem 1.5rem;
+
+    .titleWrapper {
+      padding-top: 12%;
+      width: 85%;
+    }
+
+    .title {
+    }
+    
+    .offer {
+      margin-bottom: 1.2rem;
+    }
+
+    .indexWrapper {
+      right: 35%;
+    }
+  }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Offer.module.scss'
 import { ReactComponent as CompensateBlackLogo } from '../../assets/compensate-logo-black.svg';
 import { ReactComponent as PostiBlackLogo } from '../../assets/posti-logo-black.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const offerForIndividuals = 'As a monthly subscription service, the Compensate.com calculator guides the individual through their lifestyle choices, calculates their carbon footprint and enables overcompensation for their emissions.'
 const offerForBusinesses = 'By integrating compensation for products and services into our everyday transactions, Compensate and its partners make every purchase decision a climate action.'
@@ -10,34 +11,41 @@ const postiText = 'Posti offers its customers the possibility to offset the carb
 const Offer = (props) => {
 
   return (
-    <div className={styles.main}>
-      <div>Here is what Compensate offers</div>
-      <div className={styles.forIndividuals}>
-        <div>
-          <div>For individuals</div>
-          <div>{offerForIndividuals}</div>
+    <div className={styles.wrapper}>
+      <div className={styles.forIndividualsWrapper}>
+        <div className={styles.mainTitle}>Here is what Compensate offers</div>
+        <div className={styles.contentWrapper}>
+          <div className={styles.content}>
+            <div className={styles.title}>For individuals</div>
+            <div className={styles.offer}>{offerForIndividuals}</div>
+          </div>
         </div>
-        <img src={'../../assets/mobile-collection.jpg'} alt="" />
+        <div className={styles.mobileCollectionImage} />
       </div>
-      <div className={styles.forBusiness}>
-        <div>
-          <div>For business</div>
-          <div>{offerForBusinesses}</div>
+      <div className={styles.forBusinessWrapper}>
+        <div className={styles.titleWrapper}>
+          <div className={styles.title}>For businesses</div>
+          <div className={styles.offer}>{offerForBusinesses}</div>
         </div>
-        <div>
-          <img src={'../../assets/two-girls.jpg'} alt="" />
-          <div>
-            <div>
+        <div className={styles.contentWrapper}>
+          <div className={styles.twoGirlsImage} />
+          <div className={styles.contentTextWrapper}>
+            <div className={styles.logosWrapper}>
               <PostiBlackLogo />
               <CompensateBlackLogo />
             </div>
-            <div>Posti and Compensate Partnership</div>
-            <div>{postiText}</div>
-            <button>Read More</button>
+            <div className={styles.contentInfoWrapper}>
+              <div className={styles.contentTitle}>Posti and Compensate Partnership</div>
+              <div className={styles.contentDescription}>{postiText}</div>
+              <button>Read More</button>
+            </div>
           </div>
         </div>
+        <div className={styles.indexWrapper}>
+          <div className={styles.index}>1 / 3</div>
+          <FontAwesomeIcon className={styles.arrow} icon={'arrow-right'} />
+        </div>
       </div>
-      <div>1/3</div>
     </div>
   );
 }
