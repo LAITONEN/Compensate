@@ -1,0 +1,176 @@
+$metricCircleSize: 10rem;
+$metricCirclesRowSideMargin: 1rem;
+
+.mainWrapper {
+  background-color: #EFF2F1;
+}
+
+.content {
+  background-color: #EFF2F1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.metricsWrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 40%;
+  text-align: right;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  padding: 6rem 8rem 5rem 8rem;
+  margin-left: auto;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: (2 * $metricCircleSize) + ($metricCirclesRowSideMargin * 3) + 1rem;
+  }
+
+  .metricCircle {
+    background: #288c96;
+    border-radius: 50%;
+    height: $metricCircleSize;
+    width: $metricCircleSize;
+    margin: $metricCirclesRowSideMargin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .domain {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+}
+
+.instagramImage {
+  height: auto;
+  width: 30vw;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+
+@media screen and (min-width: 640px) {
+  .instagramImageMobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .metricsWrapper {
+    padding: 6rem 6rem 5rem 6rem;
+
+    .metricCircle {
+      height: 9rem;
+      width: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .metricsWrapper {
+
+    padding: 5rem 1rem 4rem;
+    margin-left: 45%;
+    width: 50%;
+
+    .metricCircle {
+      height: 8rem;
+      width: 8rem;
+      margin: 0.5rem;
+    }
+
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .data {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+  
+    .domain {
+      font-size: 0.75rem;
+      width: 85%;
+      height: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  .mainWrapper {
+    overflow: hidden;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .metricsWrapper {
+
+    padding: 2rem 0rem 0rem;
+    width: 90%;
+    margin: 0;
+
+    .metricCircle {
+      height: 8rem;
+      width: 8rem;
+      margin: 1vw;
+    }
+
+    .title {
+      margin: 1rem auto 3rem;
+      width: 90%;
+      justify-content: center;
+    }
+
+    .data {
+      font-size: 210%;
+    }
+  
+    .domain {
+      font-size: 70%;
+      width: 85%;
+    }
+  }
+
+  .instagramImage {
+    display: none;
+    visibility: hidden;
+  }
+
+  .instagramImageMobile {
+    position: relative;
+    width: 75vw;
+    height: auto;
+    margin-bottom: -25%;
+    margin-top: 15%;
+  }
+}
