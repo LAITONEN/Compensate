@@ -1,0 +1,264 @@
+.mainWrapper {
+  background-color: #EFF2F1;
+}
+
+.communityWrapper {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 7rem 4rem 4rem 8rem;
+}
+
+.textWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 75%;
+}
+
+.textWrapper * {
+  width: 75%;
+}
+
+.textWrapper > p {
+  font-size: 1.3rem;
+}
+
+.title {
+  font-size: 3.55rem;
+  font-weight: 700;
+}
+
+.auditoryImage {
+  display: flex;
+  flex: 1;
+  background: url('../../assets/auditory.jpg') no-repeat center;
+  background-size: cover;
+  height: 0;
+  padding-top: 61.9%;
+  width: 100%;
+}
+
+.socialMediaImage {
+  height: auto;
+  width: 100%;
+}
+
+.weCompensateWrapper {
+  background-color: #1C1C1C;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  padding: 10rem 5rem 15rem 7rem;
+}
+
+.twitterTextWrapper {
+  text-align: left;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 40%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-right: 3rem;
+}
+
+.twitterTextWrapper > div:first-child {
+  margin-bottom: 2rem;
+}
+
+.tweet {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 2100px) {
+  .auditoryImage {
+    padding-top: 35%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .auditoryImage {
+    flex: 2 2;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 2099px) {
+  .auditoryImage {
+    padding-top: 40%;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .auditoryImage {
+    padding-top: 45%;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+
+  .communityWrapper {
+    align-items: center;
+  }
+
+  .textWrapper {
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .twitterTextWrapper {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .communityWrapper {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    width: 100vw;
+  }
+
+  .textWrapper {
+    text-align: center;
+    width: 85%;
+    margin: 0rem auto 3rem;
+  }
+  
+  .textWrapper * {
+    width: 100%;
+  }
+
+  .auditoryImage {
+    padding-top: 61.9%;
+    width: 85%;
+    margin: auto;
+  }
+
+  .weCompensateWrapper {
+    flex-direction: column;
+    padding: 7rem 5rem 7rem 5rem;
+  }
+
+  .twitterTextWrapper {
+    align-items: center;
+    width: auto;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+
+  .tweet {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .weCompensateWrapper {
+    padding: 7rem 5rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
+  .communityWrapper {
+    padding-top: 5rem;
+  }
+
+  .weCompensateWrapper {
+    padding: 7rem 3rem;
+  }
+
+  .twitterTextWrapper {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  .communityWrapper {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .auditoryImage {
+    width: 100%;
+  }
+
+  .textWrapper {
+    width: 95%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .socialMediaImage {
+    display: none;
+    visibility: hidden;
+  }
+
+  .weCompensateWrapper {
+    padding: 3rem 1rem;
+  }
+
+  .twitterTextWrapper {
+    font-size: 2.2rem;
+  }
+
+  .tweet {
+    margin: initial;
+    justify-content: center;
+  }
+
+  .tweet > twitter-widget {
+    width: 90% !important;
+  }
+}
+
+
+
+/* @media screen and (max-width: 1199px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 1023px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 899px) {
+.textDivs {
+  max-width: 60%;
+}
+@media screen and (max-width: 639px) {
+.textDivs {
+  max-width: 60%;
+} */
