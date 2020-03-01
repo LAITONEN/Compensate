@@ -48,7 +48,7 @@
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .quoteDiv {
@@ -109,5 +109,9 @@
 @media screen and (max-width: 639px) {
   .wrapper {
     max-width: 95%;
+  }
+
+  .stepsWrapper {
+    padding-bottom: 5rem;
   }
 }
