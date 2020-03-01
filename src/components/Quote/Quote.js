@@ -1,17 +1,18 @@
 import React from 'react';
-import styles from './Quote.module.scss'
+import monitorImage from '../../assets/monitor.png';
+import styles from './Quote.module.scss';
 
 const quote = '“I had forgotten to do my part. That’s now taken care of:​ ​compensate.com​”'
 
 const Quote = (props) => {
   return (
-    <div>
-      <div>
-        <div>{quote}</div>
-        <div>Facebook user</div>
+    <div className={styles.mainWrapper}>
+      <div className={styles.quoteWrapper}>
+        <div className={styles.quote}>{quote}</div>
+        <div className={styles.userName}>Facebook user</div>
         <button>See it for yourself</button>
       </div>
-      <img src={'../../assets/monitor.png'} alt="" />
+      <img className={styles.monitorImage} src={monitorImage} alt="" />
     </div>
   );
 }

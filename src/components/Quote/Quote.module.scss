@@ -1,0 +1,192 @@
+.mainWrapper {
+  background-color: #EFF2F1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 35vh;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  align-items: center;
+}
+
+.quoteWrapper {
+  font-size: 3rem;
+  padding: 0rem 5rem 0rem 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin-right: auto;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.quote {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.userName {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 700;
+  border: 2px solid #288c96;
+  border-radius: 2.5rem;
+  padding: 0.7rem 1.3rem;
+  text-decoration: none;
+  min-width: 10.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #288c96;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  max-width: fit-content;
+}
+
+button:hover {
+  background: #7ebac0;
+  border-color: #7ebac0;
+}
+
+.monitorImage {
+  height: auto;
+  width: 30vw;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+@media screen and (min-width: 1800px) {
+  .mainWrapper {
+    padding: 0rem 7rem 20rem 7rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .mainWrapper {
+    padding: 0rem 7rem 0rem 7rem;
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .mainWrapper {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .quoteWrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .mainWrapper {
+    padding: 6rem 0rem 8rem;
+  }
+  
+  .quoteWrapper {
+    padding: 0rem 0rem 0rem 5rem;
+    width: 40%;
+  }
+
+  .quote {
+    font-size: 2.4rem;
+  }
+  
+  .userName {
+    font-size: 1.3rem;
+  }
+
+  .monitorImage {
+    width: 40vw;
+    top: 20%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .mainWrapper {
+    padding: 3rem 0rem 4rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+  
+  .userName {
+    font-size: 1.2rem;
+  }
+
+  .monitorImage {
+    top: 25%;
+  }
+
+  button {
+    font-size: 0.8rem;
+    border-radius: 2.5rem;
+    padding: 0.6rem 1.2rem;
+    min-width: 9.5rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
+  .mainWrapper {
+    padding: 2rem 0rem 22rem;
+  }
+
+  .quoteWrapper {
+    padding: 2.5rem 25% 10%;
+    background-color: #EFF2F1;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    right: -11%;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+  }
+  
+  .userName {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .monitorImage {
+    top: 15%;
+    right: 15%;
+    z-index: 1;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  .mainWrapper {
+    padding: 2rem 0rem 15rem;
+  }
+
+  .quoteWrapper {
+    top: 40%;
+  }
+
+  .monitorImage {
+    width: 90vw;
+    right: 5vw;
+  }
+}
